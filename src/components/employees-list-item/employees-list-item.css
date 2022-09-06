@@ -1,0 +1,68 @@
+.listGroupItem {
+  padding: 15px 20px;
+  border-bottom: 1px solid #3d5a80;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listGroupItem:last-child {
+  border-bottom: none;
+}
+
+.listGroupItem span {
+  line-height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+  min-width: 550px;
+  text-transform: capitalize;
+}
+
+.listGroupItem input {
+  line-height: 35px;
+  font-size: 20px;
+  text-align: center;
+  border: 0;
+}
+
+.listGroupItem button {
+  width: 35px;
+  height: 35px;
+  margin: 3px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.listGroupItem .btn-cookie {
+  color: #e09f3e;
+}
+
+.listGroupItem .btn-trash {
+  color: #e5383b;
+}
+
+.listGroupItem .fa-star {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  color: #ffd700;
+  transition: 0.3s all;
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.listGroupItem.like .fa-star {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.listGroupItem.increase .list-group-item-label,
+.listGroupItem.increase .list-group-item-input {
+  color: #e09f3e;
+}
+
+.listGroupItem.increase .btn-star {
+  color: #aeaeae;
+}
